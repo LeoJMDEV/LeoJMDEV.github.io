@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: grid;
+    grid-gap: 20px;
+}
+.Particulas{
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    position: fixed;
+    border: none;
+    border-radius: none;
+    margin: 0;
+}
+div{
+    background-color: rgba(0, 0, 0, 0.137);
+    border: 1px solid black;
+    width: 70%;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 15px;
+
+    display: flex;
+    align-items: center;
+    text-align:justify;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+}
+header{
+    width: 70%;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 15px;
+    display: grid;
+    grid-template-areas: "titulo titulo"
+                        "Foto Datos";
+    grid-template-columns: 1fr 3fr;
+}
+.Titulo{
+    grid-area: titulo;
+    background-color: rgba(255, 255, 255, 0.762);
+    border: none;
+    display: flex;
+    flex-direction: row;
+    grid-gap: 30px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    margin: 0;
+}
+.Titulo img{
+    width: 40px;
+}
+.Foto{
+    grid-area: Foto;
+    width: auto;
+    background-color:transparent;
+    border: none;
+
+}
+.Datos{
+    grid-area: Datos;
+    width: 100%;
+    height: auto;
+
+}
+.Foto img{
+    width: 240px;
+}
+p, h2{
+    margin: 0;
+}
+.Section1, .Section2, .Section3{
+    display: flex;
+    flex-direction: row;
+    grid-gap: 20px;
+    background-color: transparent;
+    border: none;
+}
+@media screen and (max-width :800px){
+    header{
+        width: 70%;
+        margin: auto;
+        box-sizing: border-box;
+        padding: 15px;
+        display: grid;
+        grid-template-areas: "titulo"
+                            "Foto" 
+                            "Datos";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    .Titulo{
+        grid-area: titulo;
+        background-color: transparent;
+        border: none;
+        display: flex;
+        flex-direction: row;
+        grid-gap: 30px;
+        font-size: 12px;
+    }
+    .Titulo img{
+        width: 40px;
+    }
+    .Foto{
+        grid-area: Foto;
+        width: auto;
+        background-color:transparent;
+        border: none;
+    
+    }
+    .Datos{
+        grid-area: Datos;
+        width: 100%;
+        height: auto;
+    
+    }
+}

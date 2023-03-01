@@ -1,0 +1,393 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    margin: auto;
+    height: auto;
+}
+
+nav{
+    height: 40px;
+    width: 100%;
+    padding: 2px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: right;
+    align-items: end;
+    text-align: center;
+    position: sticky;
+    top: 0px;
+}
+nav a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100px;
+    height: 40px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: black;
+    z-index: 2;
+    font-family: 'Anton', sans-serif;
+
+}
+nav a:hover{
+    color: rgb(250, 0, 62);
+
+}
+.banner{
+    width: 100%;
+    height: 1000px;
+    display: grid;
+    grid-template-areas: "subnav particles";
+    grid-template-columns: 30% 70%;
+}
+.subnav{
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    grid-area: subnav;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    margin-top: -40px;
+    box-shadow: rgba(0, 0, 0, 0.171) 10px 10px;
+    gap:10px
+}
+#particles-js{
+    grid-area: particles;
+    width: 100%;
+    height: 100%;
+    margin-top: -40px;
+    z-index: -1;
+    background-color: rgb(255, 255, 255);
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.contenido{
+    position:absolute;
+    height: 200px;
+    width: 400px;
+    z-index: 2;
+    backdrop-filter: blur(3px);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 30px;
+    gap:10px;
+    font-family: 'Anton', sans-serif;
+
+}
+
+.Proyectos{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-areas: "l1 l2"
+                        "l3 l4"
+                        "l5 l5";
+    gap: 100px;
+    box-sizing: border-box;
+    padding: 40px;
+   background: linear-gradient(white 20%, black );
+    
+}
+.p{
+    border: 2px solid black;
+    width: 100%;
+    height: 400px; 
+    background-color: rgb(241, 241, 241);
+    border-radius: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin-top: 40px;
+    padding: 20px;
+    box-shadow: black 10px 10px;
+}
+
+.Division{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    box-sizing: border-box;
+    
+}
+.py{
+    font-size: 80px;
+    color: rgba(0, 0, 0, 0.158);
+    font-family: 'Anton', sans-serif;
+    font-weight: bold;
+    background-image: url("../Img/venezuela.jpeg");
+    background-size: cover;
+    background-position-y: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+.py:hover{
+    background-image: url("../Img/venezuela.png");
+
+}
+footer{
+    width: 100%;
+    height: 400px;
+    background-color: black;
+}
+.leojm{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.leojm .logo{
+    width: 100%;
+    height: 100%;
+    background-image: url("../Img/Blancoynegro.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.leojm img{
+    width: 100%;
+    height: 100%;
+}
+.leojm .logo:hover{
+    background-image: url("../Img/LeoJM2.png");
+
+}
+.qr{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.QRG{
+    width: 70%;
+    height: 70%;
+}
+input[type="text"]{
+    text-align: center;
+    height: 30px;
+    border-radius: 5px;
+    margin-top:10px;
+}
+.boton{
+    text-align: center;
+    width: 70%;
+    height: 30px;
+    border-radius: 5px;
+    margin-top:10px;
+    background-color: rgb(0, 0, 0);
+    Color: rgb(255, 255, 255);
+    text-decoration: none;
+
+    font-size: 20px;
+    font-weight: bold;
+ 
+}
+.boton:hover{
+    color: rgb(250, 0, 62);
+    cursor: pointer;
+}
+.botones, .descripcion{
+    margin: auto;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+    width: 100%;
+    gap: 100px;
+    font-family: 'Anton', sans-serif;
+    font-size: 20px;
+  
+}
+.botones a {
+    text-decoration: none;
+    color: black;
+}
+.p .img{
+    width: 100%;
+    height: 80%;
+    background-image: url("../Img/naturaleza-ConvertImage.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+}
+.p .img:hover{
+    background-image: url("../Img/naturaleza.jpg");
+}
+
+@media screen and (max-width : 800px){
+    .banner{
+        width: 100%;
+        height: 1000px;
+        display: grid;
+        grid-template-areas: "particles"
+                            "subnav";
+        grid-template-rows: 70% 30%;
+        grid-template-columns: 100%;
+    }
+    .subnav{
+    box-sizing: border-box;
+    display: grid;
+    grid-template-areas: "n1 n2 n3"
+                        "n1 n4 n3";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 0,4fr;
+    grid-area: subnav;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    
+    box-shadow: rgba(0, 0, 0, 0.171) 10px 10px;
+    gap:5px
+}
+.uno{
+    grid-area: n1;
+    width: 100%;
+    height: 120px;
+}
+.dos{
+    grid-area: n3;
+    width: 100%;
+    height: 120px;
+}
+.qr{
+    grid-area: n2;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    margin-bottom: -20px;
+}
+.form{
+    grid-area: n4;
+    width: 100%;
+}
+#particles-js{
+    grid-area: particles;
+    width: 100%;
+    height: 100%;
+    margin-top: -40px;
+    z-index: -1;
+    background-color: rgb(255, 255, 255);
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+nav a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100px;
+   
+    box-sizing: border-box;
+    text-decoration: none;
+    color: rgb(245, 9, 87);
+    z-index: 2;
+    font-family: 'Anton', sans-serif;
+
+}
+nav{
+    height: 30px;
+    width: 100%;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: sticky;
+    top: 0px;
+    background-color: rgba(255, 255, 255, 0.712);
+}
+.Proyectos{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 100px;
+    box-sizing: border-box;
+    padding: 20px;
+   background: linear-gradient(white 20%, black );
+    
+}
+.p{
+    border: 2px solid black;
+    width: 100%;
+    height: 300px; 
+    background-color: rgb(241, 241, 241);
+    border-radius: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin-top: 40px;
+    padding: 10px;
+    box-shadow: black 10px 10px;
+}
+.py{
+    font-size: 40px;
+    color: rgba(0, 0, 0, 0.158);
+    font-family: 'Anton', sans-serif;
+    font-weight: bold;
+    background-image: url("../Img/venezuela.jpeg");
+    background-size: cover;
+    background-position-y: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+.leojm .logo{
+    width: 100%;
+    height: 100%;
+    background-image: url("../Img/LeoJM2.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.boton{
+        color: rgb(252, 81, 138);
+        user-select: none;
+}
+input[type="text"]{
+    text-align: center;
+    height: 30px;
+    border-radius: 5px;
+    margin-top:10px;
+    color: rgb(252, 81, 138);
+    border: 2px solid rgb(252, 81, 138);
+    background-color: rgba(255, 255, 255, 0.267);
+    
+}
+input[type="text"]::placeholder{
+    color: rgb(252, 81, 138);
+}
+}
